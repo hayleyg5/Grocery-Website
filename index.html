@@ -24,10 +24,8 @@
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">	
-      	<input type="checkbox" name="option" value="None">None<br>
-      	<input type="checkbox" name="option" value="Vegetarian">Vegetarian<br>
+	Select what applies to you:	
+      	<input type="checkbox" id="dietSelect" name="option" onchange="populateListProductChoices(this.id, 'displayProduct')" value="Vegetarian">Vegetarian<br>
       	<input type="checkbox" name="option" value="GlutenFree">Gluten Free<br>
       	<input type="checkbox" name="option" value="None">None<br>
 	</select>
