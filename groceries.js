@@ -4,23 +4,84 @@
 
 var products = [
 	{
-		name: "brocoli",
+		name: "Apple",
 		vegetarian: true,
 		glutenFree: true,
 		price: 1.99
 	},
 	{
-		name: "bread",
+		name: "Grapes",
 		vegetarian: true,
-		glutenFree: false,
-		price: 2.35
+		glutenFree: true,
+		price: 4.99
 	},
 	{
-		name: "salmon",
+		name: "Lemon",
+		vegetarian: true,
+		glutenFree: true,
+		price: 1.59
+	},
+	{
+		name: "Sweet Potato",
+		vegetarian: true,
+		glutenFree: true,
+		price: 2.50
+	},
+	{
+		name: "Green Beans",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.50
+	},
+	{
+		name: "Milk",
+		vegetarian: true,
+		glutenFree: true,
+		price: 5.50
+	},
+	{
+		name: "Cheddar Cheese",
+		vegetarian: true,
+		glutenFree: true,
+		price: 4.25
+	},
+	{
+		name: "Bread",
+		vegetarian: true,
+		glutenFree: false,
+		price: 5.99
+	},
+	{
+		name: "Pasta",
+		vegetarian: true,
+		glutenFree: false,
+		price: 3.50
+	},
+	{
+		name: "Muffin",
+		vegetarian: true,
+		glutenFree: false,
+		price: 2.00
+	},
+	{
+		name: "Salmon",
 		vegetarian: false,
 		glutenFree: true,
 		price: 10.00
-	}
+	},
+	{
+		name: "Chicken",
+		vegetarian: false,
+		glutenFree: true,
+		price: 11.49
+	},
+	{
+		name: "Ground Beef",
+		vegetarian: false,
+		glutenFree: true,
+		price: 9.99
+	},
+	
 ];
 	
 
