@@ -25,9 +25,12 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Select what applies to you:	
-      	<input type="checkbox" id="dietSelect" name="option" onchange="populateListProductChoices(this.id, 'displayProduct')" value="Vegetarian">Vegetarian<br>
-      	<input type="checkbox" name="option" value="GlutenFree">Gluten Free<br>
-      	<input type="checkbox" name="option" value="None">None<br>
+      	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Vegetarian">Vegetarian</option>
+    	<option value="GlutenFree">Gluten Free</option>
+	<option value="Both">Vegetarian and Gluten Free</option>
+    	<option value="None">None</option>
 	</select>
 </div>
 
