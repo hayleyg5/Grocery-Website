@@ -16,8 +16,8 @@ body {
 .subheader h2 {
   position: relative;
   color: rgb(255, 255, 255);
-  background-color: rgb(255, 0, 0);
-  font-size: 20px;
+  background-color: rgb(248, 229, 183);
+  font-size: 16px;
 }
 
 /* Style the tab */
