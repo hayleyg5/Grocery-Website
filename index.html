@@ -32,6 +32,14 @@
 	<option value="Both">Vegetarian and Gluten Free</option>
     	<option value="None">None</option>
 	</select>
+	
+	Select your preference:	
+    	<select id="organic" name="organic" onchange="populateListProductChoices(this.id, 'displayProduct')">
+	<option value=""></option>
+	<option value="Organic">Organic</option>
+    	<option value="Non-organic">Non-organic</option>
+	<option value="No preference">No preference</option>
+	</select>
 </div>
 
 <div id="Products" class="tabcontent">
@@ -54,4 +62,9 @@
 <script src="main.js"></script>
 
 </body>
+	
+<footer>
+    <p id="signature">Website designed by: Hayley Goodman 8698359</p>
+</footer>
+	
 </html>
