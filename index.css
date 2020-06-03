@@ -43,3 +43,9 @@
   border: 1px solid #ccc;
   border-top: none;
 }
+
+#signature {
+  text-align: left;
+  color: rgb(34, 139, 34);
+  font-style: bold;
+}
