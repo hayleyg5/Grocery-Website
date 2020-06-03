@@ -2,6 +2,11 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 /* This style sheet has been modified from Caroline Barriere's initial file. */
 
+body {
+  background-color: white;
+  length: 800px; 
+}
+
 .header h1 {
   position: relative;
   color: rgb(255, 255, 255);
