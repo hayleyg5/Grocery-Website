@@ -4,7 +4,7 @@
 
 var products = [
 	{
-		name: "APPLE",
+		name: "Banana",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
