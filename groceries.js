@@ -4,7 +4,7 @@
 
 var products = [
 	{
-		name: "Apple",
+		name: "Banana",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -103,23 +103,23 @@ var products = [
 // prices should be included in this list, as well as a sort based on price
 
 function restrictListProducts(prods, restriction) {
-	let product_info = [];
+	let product_names = [];
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_info.push(prods[i].name + ": " + prods[i].price);
+			product_names.push(prods[i].name + ": " + prods[i].price);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_info.push(prods[i].name + ": " + prods[i].price);
+			product_names.push(prods[i].name + ": " + prods[i].price);
 		}
 		else if ((restriction == "Both") && (prods[i].glutenFree == true) 
 			&& (prods[i].vegetarian == true)){
-			product_info.push(prods[i].name + ": " + prods[i].price);
+			product_names.push(prods[i].name + ": " + prods[i].price);
 		}
 		else if (restriction == "None"){
-			product_info.push(prods[i].name + ": " + prods[i].price);
+			product_names.push(prods[i].name + ": " + prods[i].price);
 		}
 	}
-	return product_info;
+	return product_names;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
