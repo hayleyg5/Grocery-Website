@@ -4,7 +4,7 @@
 
 var products = [
 	{
-		name: "Orange",
+		name: "Apple",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
@@ -29,21 +29,21 @@ var products = [
 		vegetarian: true,
 		glutenFree: true,
 		organic: false,
-		price: 2.50
+		price: 2.49
 	},
 	{
 		name: "Green Beans",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 4.50
+		price: 4.59
 	},
 	{
 		name: "Milk",
 		vegetarian: true,
 		glutenFree: true,
 		organic: true,
-		price: 5.50
+		price: 5.69
 	},
 	{
 		name: "Cheddar Cheese",
@@ -64,21 +64,21 @@ var products = [
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 3.50
+		price: 3.55
 	},
 	{
 		name: "Muffin",
 		vegetarian: true,
 		glutenFree: false,
 		organic: false,
-		price: 2.00
+		price: 2.15
 	},
 	{
 		name: "Salmon",
 		vegetarian: false,
 		glutenFree: true,
 		organic: false,
-		price: 10.00
+		price: 10.59
 	},
 	{
 		name: "Chicken",
@@ -103,31 +103,31 @@ var products = [
 // prices should be included in this list, as well as a sort based on price
 
 function restrictListProducts(prods, restriction) {
-	let product_names = [];
+	let product_info = [];
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name + ": " + prods[i].price);
+			product_info.push(prods[i].name + ": " + prods[i].price);
 		}
 		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_names.push(prods[i].name);
+			product_info.push(prods[i].name + ": " + prods[i].price);
 		}
 		else if ((restriction == "Both") && (prods[i].glutenFree == true) 
 			&& (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
+			product_info.push(prods[i].name + ": " + prods[i].price);
 		}
 		else if (restriction == "None"){
-			product_names.push(prods[i].name);
+			product_info.push(prods[i].name + ": " + prods[i].price);
 		}
 	}
-	return product_names;
+	return product_info;
 }
 
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {
-	totalPrice = 0;
-	for (let i=0; i<products.length; i+=1) {
-		if (chosenProducts.indexOf(products[i].name) > -1){
-			totalPrice += products[i].price;
+	let totalPrice = 0;
+	for (let i=0; i<chosenProducts.length; i+=1) {
+		if (chosenProducts.indexOf(chosenProducts[i].name) > -1){
+			totalPrice += chosenProducts[i].price;
 		}
 	}
 	return totalPrice;
