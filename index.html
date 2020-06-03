@@ -36,7 +36,7 @@
 	<br> 
 	
 	Select your preference:	
-    	<select id="organic" name="organic" onchange="populateListProductChoices(this.id, 'displayProduct')">
+    	<select id="organic" name="organic" onchange="populateListProductChoices(this.id, 'displayOrganic')">
 	<option value=""></option>
 	<option value="Organic">Organic Food</option>
     	<option value="Non-organic">Non-organic Food</option>
@@ -46,9 +46,10 @@
 
 <div id="Products" class="tabcontent">
   <h3>Products</h3>
-  <p>These products were selected for you based on your restrictions and preferences</p>
+  <p>These products were selected for you based on your restrictions and preferences:</p>
 	 Choose items to add to your cart:
 	 <div id="displayProduct"></div>
+	 <div id="displayOrganic"></div>
 	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
 		Add to cart
 	</button>
@@ -56,7 +57,7 @@
 
 <div id="Shopping Cart" class="tabcontent">
   <h3>Shopping Cart</h3>
-  <p>Here are the items in your shopping cart</p>
+  <p>Here are the items in your shopping cart:</p>
   <div id="displayCart"></div>
 </div>
 
